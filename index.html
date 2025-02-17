@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- Add your CSS files here -->
-    <link rel="stylesheet" href="styles.css">
+    <title>TechVision Pro Smart Glasses</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header id="header">
-        <img id="header-img" src="">
-        </img>
         <nav id="nav-bar">
-            <!-- Navigation content -->
-            <ul>                                                     
-                <li>                                                 
-                    <a href="#home" class="nav-link">Home</a>        
-                </li>                                                
-                <li>                                                 
-                    <a href="#about" class="nav-link">About</a>      
-                </li>                                                
-                <li>                                                 
-                    <a href="#products" class="nav-link">Products</a>
-                </li>
-            </ul>
+            <img src="https://example.com/logo.png" alt="TechVision Logo" id="header-img">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#video-section" class="nav-link">Demo</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
         </nav>
     </header>
-    <div class="container"></div>
-            <!-- Add IDs to existing sections -->
-        <section class="heading" id="home">
-        <!-- ... existing header content ... -->
-            <h2>Homemade biltong right to your doorstep</h2>
-            <form id="form" action="#"></form>
-            <input name="email" type="email" id=email placeholder="Enter your email adress">
-            <input id="submit" type="submit" value="Get Started" class="button">
-        </section>
 
-        <section class="text" id="about">
-        <!-- ... existing article content ... -->
-        </section>
-
-        <section class="text-with-images" id="products">
-        <!-- ... existing portfolio content ... -->
-        </section>
-        
-        <div class="container">
-            <section id="features">
-                <div class="grid">
-                    <div class="icon">
-                        <i class="fa-solid fa-drumstick-bite"></i>
-                    </div>
+    <div class="container">
+        <section id="features">
+            <h2 class ="first-title">Next-Gen Smart Glasses</h2>
+            <div class="product-section">
+                <div>
+                    <h3>Augmented Reality Display</h3>
+                    <p>4K resolution with 120Hz refresh rate for seamless AR integration</p>
                 </div>
-                <div class="grid"></div>
-                <div class="grid"></div>
-            </section>
-        </div>
+                <div>
+                    <h3>Voice Control</h3>
+                    <p>Advanced AI-powered voice recognition system</p>
+                </div>
+                <div>
+                    <h3>Gesture Control</h3>
+                    <p>Intuitive gesture recognition system for easy navigation</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Add your main content here -->
-    </main>
+        <section id="video-section">
+            <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Product Demo" allowfullscreen></iframe>
+        </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <!-- Footer content -->
-    </footer>
+        <section id="pricing">
+            <h2>Pricing Options</h2>
+            <div class="product-section">
+                <div>
+                    <h3>Basic</h3>
+                    <p>$499</p>
+                    <ul>
+                        <li>Core Features</li>
+                        <li>1 Year Warranty</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Pro</h3>
+                    <p>$799</p>
+                    <ul>
+                        <li>All Basic Features</li>
+                        <li>Extended Warranty</li>
+                        <li>Premium Support</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ultimate</h3>
+                    <p>$999</p>
+                    <ul>
+                        <li>All Pro Features</li>
+                        <li>Lifetime Warranty</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <h2>Stay Updated</h2>
+            <input type="email" id="email" name="email" 
+                   placeholder="Enter your email for updates" required>
+            <input type="submit" id="submit" value="Get Early Access">
+        </form>
+    </div>
 </body>
 </html>
